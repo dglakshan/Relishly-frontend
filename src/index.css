@@ -1,0 +1,251 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #fefefc;
+  --color-primary-2: #0c0b09;
+  --color-primary-3: #191815;
+  --color-secondary: #cda45e;
+  --color-secondary-2: #fffbeb;
+  --color-accent: #e0ab4f;
+  --color-dark-text: #bab9b8;
+
+  --spacing-grid-gap: 12px;
+  --spacing-special-gap: 28px;
+  --spacing-special-gap-2: 40px;
+
+  --radius-base: 15px 15px 15px 0px;
+  --radius-menu-image: 15px 15px 15px 15px;
+  --radius-gallery-image: 10px;
+  --radius-cart: 30px 0px 30px 0px;
+  --radius-special: 30px 0px 30px 30px;
+  --radius-special-2: 0px 30px 30px 0px;
+  --spacing-button-padding: 5px 10px;
+  --radius-review-cart: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-dark-text) !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-secondary) !important;
+  opacity: 1;
+}
+
+html {
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+}
+
+.button-1 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  padding: 8px 12px;
+  color: var(--color-primary);
+  border: 2px;
+  border-color: var(--color-secondary);
+  border-style: solid;
+  border-radius: 20px 20px 0px 20px;
+  cursor: pointer;
+
+  z-index: 1;
+  font-size: clamp(0.9rem, 0.5vw + 0.7rem, 1rem);
+}
+
+.button-1::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-secondary);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.button-1:hover::before {
+  transform: translate(-50%, -50%) scale(40);
+}
+
+.button-2 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  padding: 8px 12px;
+  color: var(--color-primary);
+  border: 2px;
+  border-color: var(--color-secondary);
+  border-style: solid;
+  border-radius: 20px 20px 0px 20px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: clamp(0.9rem, 0.5vw + 0.7rem, 1rem);
+}
+
+.button-2::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-secondary);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.button-2:hover::before {
+  transform: translate(-50%, -50%) scale(40);
+}
+
+.button-3 {
+  color: var(--color-dark-text);
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.5rem, 1vw + 0.1rem, 0.7rem);
+  font-weight: 700;
+}
+
+.button-4 {
+  padding-inline: 10px;
+  padding-block: 6px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(0.6rem, 0.8vw + 0.5rem, 0.9rem);
+  font-weight: 700;
+  text-wrap: initial;
+}
+
+.Nav-Effect {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 0.5vw + 0.7rem, 0.9rem);
+}
+
+.font-outline {
+  font-family: "Unna", serif;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-accent);
+
+  paint-order: stroke fill;
+  stroke-linejoin: round;
+}
+
+.font-outline-2 {
+  font-family: "Unna", serif;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-secondary);
+
+  paint-order: stroke fill;
+  stroke-linejoin: round;
+}
+
+.main-heading {
+  color: var(--color-secondary);
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw + 1rem, 4rem);
+  line-height: clamp(2rem, 5vw + 1.4rem, 4rem);
+}
+
+.main-heading-2 {
+  color: var(--color-accent);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3.5vw + 1rem, 3rem);
+  line-height: clamp(1.5rem, 4vw + 1.3rem, 3rem);
+}
+
+.logo {
+  color: var(--color-secondary);
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: clamp(1.6rem, 2vw + 0.8rem, 2rem);
+}
+
+.sub-heading {
+  color: var(--color-primary);
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  font-size: clamp(1rem, 4vw + 1rem, 2.9rem);
+  line-height: clamp(1.4rem, 1vw + 1rem, 1.5rem);
+}
+
+.sub-heading-2 {
+  color: var(--color-secondary);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2vw + 1.5rem, 3rem);
+  line-height: clamp(1.4rem, 1vw + 1rem, 1.5rem);
+}
+
+.sub-heading-3 {
+  color: var(--color-secondary);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 2vw + 0.2rem, 1.5rem);
+}
+
+.sub-heading-4 {
+  color: var(--color-primary);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 800;
+  font-size: clamp(1.5rem, 2vw + 0.2rem, 1.9rem);
+}
+
+.sub-heading-5 {
+  color: var(--color-dark-text);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 800;
+  font-size: clamp(1.2rem, 2vw + 0.2rem, 1.5rem);
+}
+
+.sub-heading-6 {
+  color: var(--color-primary);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 800;
+  font-size: clamp(1.1rem, 2vw + 0.2rem, 1.3rem);
+}
+
+.sub-heading-7 {
+  color: var(--color-secondary);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 900;
+  font-size: clamp(1.1rem, 2vw + 0.2rem, 2rem);
+}
+
+.paragraph {
+  color: var(--color-primary);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: clamp(1.4rem, 1vw + 1rem, 1.5rem);
+  font-size: clamp(0.5rem, 0.5vw + 0.7rem, 0.9rem);
+}
+
+.paragraph-2 {
+  color: var(--color-dark-text);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: clamp(1.4rem, 1vw + 1rem, 1.5rem);
+  font-size: clamp(0.5rem, 0.5vw + 0.7rem, 0.9rem);
+}
