@@ -21,7 +21,7 @@ export default function MenuItemCart({ image, heading, price, description }) {
             {price}
           </div>
         </div>
-        <p className="paragraph-2 text-sm opacity-80 line-clamp-2">
+        <p className="paragraph-2 text-sm opacity-80 line-clamp-2 max-w-[90%] md:max-w-fit">
           {description}
         </p>
       </div>
