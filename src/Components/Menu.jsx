@@ -33,7 +33,7 @@ export default function Menu() {
 
           <h1 className="sub-heading-2 text-strat">Taste the Freshness</h1>
         </div>
-        <div className="w-full flex items-baseline md:items-baseline-last justify-center h-full">
+        <div className="w-full flex justify-center items-center h-fit md:h-full md:items-baseline-last">
           <div className="flex flex-wrap gap-grid-gap overflow-hidden">
             {mealsCategory.map((item) => (
               <button
