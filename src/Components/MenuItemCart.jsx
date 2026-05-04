@@ -1,7 +1,7 @@
 export default function MenuItemCart({ image, heading, price, description }) {
   return (
-    <div className="w-full h-auto flex items-center justify-center gap-x-4 border">
-      <div className="w-[80px] h-[80px] shrink-0 rounded-menu-image overflow-hidden">
+    <div className="w-full h-auto flex items-center justify-center gap-x-2 md:gap-x-4">
+      <div className="w-[70px] h-[70px] md:w-[80px] md:h-[80px] shrink-0 rounded-menu-image overflow-hidden">
         <img
           src={image}
           alt={heading}
@@ -15,7 +15,7 @@ export default function MenuItemCart({ image, heading, price, description }) {
             {heading}
           </h2>
 
-          <div className="flex-1 border-b border-dotted border-dark-text mb-1" />
+          <div className="hidden sm:block flex-1 border-b border-dotted border-dark-text mb-1" />
 
           <div className="sub-heading-7 font-semibold whitespace-nowrap">
             {price}

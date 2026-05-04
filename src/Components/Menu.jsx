@@ -29,11 +29,9 @@ export default function Menu() {
     >
       <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 gap-special-gap">
         <div className="w-full h-fit flex flex-col items-center justify-center gap-y-special-gap">
-          <h2 className="sub-heading text-start">Our Menu</h2>
+          <h2 className="sub-heading text-center">Our Menu</h2>
 
-          <h1 className="sub-heading-2 w-full flex items-center justify-center">
-            We Provide Fresh Menu
-          </h1>
+          <h1 className="sub-heading-2 text-center">We Provide Fresh Menu</h1>
         </div>
         <div className="w-full flex items-baseline md:items-baseline-last justify-center h-fit">
           <div className="flex flex-wrap gap-grid-gap overflow-hidden">
