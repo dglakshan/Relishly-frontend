@@ -11,13 +11,13 @@ export default function MenuItemCart({ image, heading, price, description }) {
 
       <div className="flex-1 flex flex-col gap-y-1">
         <div className="flex items-baseline justify-between gap-x-2">
-          <h2 className="sub-heading-6 font-bold truncate bg-primary-2 px-2 rounded-sm">
+          <h2 className="sub-heading-6 font-bold truncate bg-primary-2 px-2 rounded-sm max-w-[60%]">
             {heading}
           </h2>
 
-          <div className="hidden sm:block flex-1 border-b border-dotted border-dark-text mb-1" />
+          <div className="hidden sm:block flex-1  border-b border-dotted border-dark-text mb-1" />
 
-          <div className="sub-heading-7 font-semibold whitespace-nowrap">
+          <div className="sub-heading-7 font-semibold whitespace-nowrap shrink-0">
             {price}
           </div>
         </div>

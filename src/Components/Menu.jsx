@@ -25,15 +25,15 @@ export default function Menu() {
   return (
     <div
       id="Menu"
-      className="w-full h-fit flex flex-col items-center justify-center gap-y-special-gap px-6 md:px-20 mx-auto py-10 lg:py-20 bg-primary-3"
+      className="w-full h-fit flex flex-col items-center justify-center gap-y-10 md:gap-y-20 px-6 md:px-20 mx-auto py-10 lg:py-20 bg-primary-3"
     >
       <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 gap-special-gap">
         <div className="w-full h-fit flex flex-col items-center justify-center gap-y-special-gap">
           <h2 className="sub-heading text-center">Our Menu</h2>
 
-          <h1 className="sub-heading-2 text-center">We Provide Fresh Menu</h1>
+          <h1 className="sub-heading-2 text-strat">Taste the Freshness</h1>
         </div>
-        <div className="w-full flex items-baseline md:items-baseline-last justify-center h-fit">
+        <div className="w-full flex items-baseline md:items-baseline-last justify-center h-full">
           <div className="flex flex-wrap gap-grid-gap overflow-hidden">
             {mealsCategory.map((item) => (
               <button
