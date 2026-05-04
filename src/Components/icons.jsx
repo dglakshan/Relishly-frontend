@@ -7,46 +7,46 @@ export const DishIcon = ({
     <svg
       width={size}
       height={size}
-      viewBox="0 0 512 512"
+      viewBox="0 0 512 512" // viewBox එක එලෙසම තබා coordinates මැදට ගෙන ඇත
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Outer Plate Curve */}
+      {/* Outer Plate Curve - මදක් වමට කර දාරය කැපීම වළක්වා ඇත */}
       <path
-        d="M373.8 456.1C333.9 479.3 287.4 491.5 240 491.5C108.6 491.5 2.1 385 2.1 253.6C2.1 122.2 108.6 15.7 240 15.7C287.4 15.7 333.9 27.9 373.8 51.1"
+        d="M360 440C324.1 462.8 281.3 475 238.6 475C118.9 475 22.1 378.2 22.1 258.5C22.1 138.8 118.9 42 238.6 42C281.3 42 324.1 54.2 360 77"
         stroke={color}
-        strokeWidth="42"
+        strokeWidth="35" // Stroke එක මදක් අඩු කර පිරිසිදු පෙනුමක් ලබා දී ඇත
         strokeLinecap="round"
       />
 
       {/* Inner Plate Curve */}
       <path
-        d="M308.1 113.8C287.4 103.8 264.2 98.6 240 98.6C154.4 98.6 85 168 85 253.6C85 339.2 154.4 408.6 240 408.6C264.2 408.6 287.4 403.4 308.1 393.4"
+        d="M300 135C282.1 126.3 261.2 121.5 239.3 121.5C163.1 121.5 101.4 183.2 101.4 259.4C101.4 335.6 163.1 397.3 239.3 397.3C261.2 397.3 282.1 392.5 300 383.8"
         stroke={color}
-        strokeWidth="42"
+        strokeWidth="30"
         strokeLinecap="round"
       />
 
-      {/* Fork/Spoon Shape */}
+      {/* Fork Section - Overlap වීම වැළැක්වීමට මදක් දකුණට කර ඇත */}
       <path
-        d="M428.6 21.1V126.1C428.6 156.4 404 181 373.7 181C343.4 181 318.8 156.4 318.8 126.1V21.1"
+        d="M450 40V140C450 168.2 427.2 191 399 191C370.8 191 348 168.2 348 140V40"
         stroke={color}
-        strokeWidth="42"
+        strokeWidth="35"
         strokeLinecap="round"
       />
       <path
-        d="M373.7 21.1V73.7"
+        d="M399 40V100"
         stroke={color}
-        strokeWidth="42"
+        strokeWidth="35"
         strokeLinecap="round"
       />
 
-      {/* Knife/Handle Shape */}
+      {/* Handle Section */}
       <path
-        d="M428.6 245.5V491.5"
+        d="M450 260V470"
         stroke={color}
-        strokeWidth="42"
+        strokeWidth="35"
         strokeLinecap="round"
       />
     </svg>

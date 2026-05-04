@@ -50,7 +50,7 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 gap-special-gap">
+      <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 gap-special-gap md:gap-x-20">
         {activeCategory === "ALL"
           ? menuData.map((item) => (
               <MenuItemCart

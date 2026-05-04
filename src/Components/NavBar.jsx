@@ -43,7 +43,6 @@ export default function NavBar() {
     >
       {/* Logo */}
       <div className="logo flex items-center gap-2 justify-center">
-        <DishIcon size={30} color="var(--color-secondary)" />
         <a href="Home" className="logo">
           Relishly
         </a>
