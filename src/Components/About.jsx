@@ -34,7 +34,9 @@ export default function AboutUs() {
         </p>
 
         <div className="w-full flex justify-center pt-grid-gap">
-          <button className="button-1">Check Menu</button>
+          <a href="#Menu" className="button-1">
+            Check Menu
+          </a>
         </div>
       </div>
     </div>
