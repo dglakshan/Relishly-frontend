@@ -35,7 +35,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`w-full h-fit py-4 px-6 md:px-20 mx-auto  flex items-center justify-between Nav-Effect  ${
+      className={`w-full h-fit py-3 px-6 md:px-20 mx-auto  flex items-center justify-between Nav-Effect  ${
         scrolled || hambugger
           ? "bg-primary-2 border-b border-secondary"
           : "bg-transparent"

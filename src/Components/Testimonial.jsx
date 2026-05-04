@@ -46,11 +46,7 @@ export default function Testimonial() {
         <h2 className="sub-heading text-secondary font-semibold">
           Testimonials
         </h2>
-        <div className="w-fit h-fit flex items-center justify-center gap-0">
-          <div className="w-6 h-0.5 bg-secondary" />
-          <div className="w-2 h-2 bg-secondary rounded-full mx-1" />
-          <div className="w-6 h-0.5 bg-secondary" />
-        </div>
+
         <h1 className="sub-heading-2 text-center">
           What they're saying about us
         </h1>

@@ -6,38 +6,24 @@ export default function AboutUs() {
       id="About"
       className="grid grid-cols-1 gap-10 md:grid-cols-2 px-6 md:px-20 mx-auto py-10 lg:py-20"
     >
-      <div className="w-full h-fit grid grid-cols-2 gap-grid-gap">
-        <div className="h-[512px] w-full ">
+      <div className="w-full grid grid-cols-1 h-fit">
+        <div className="relative h-[400px] md:h-[512px] w-full ">
           <img
             src="/about-2.webp"
             alt=""
-            className="object-cover w-full h-full"
+            className="absolute top-0 left-0 object-cover w-full h-full "
+          />
+
+          <img
+            src="/about-1.webp"
+            alt=""
+            className="absolute -bottom-4 right-0 md:-bottom-8 md:-right-8 object-cover border-4 border-primary h-[180px] w-[180px] md:w-[300px] md:h-[300px]"
           />
         </div>
-        <div className="flex flex-col gap-grid-gap h-[500px] w-full">
-          <div className="w-full h-1/2">
-            <img
-              src="/about-1.webp"
-              alt=""
-              className="object-cover  h-full w-full"
-            />
-          </div>
-          <div className="w-full h-1/2">
-            <img
-              src="/about-3.webp"
-              alt=""
-              className="object-cover h-full w-full"
-            />
-          </div>
-        </div>
       </div>
-      <div className="w-full h-full flex flex-col items-center justify-center gap-y-grid-gap ">
+      <div className="w-full h-full flex flex-col items-center justify-center gap-y-grid-gap pt-20 md:pt-0">
         <h2 className="sub-heading pb-2">About Us</h2>
-        <div className="w-fit h-fit flex items-center justify-center gap-0">
-          <div className="w-6 h-0.5 bg-secondary" />
-          <div className="w-2 h-2 bg-secondary" />
-          <div className="w-6 h-0.5 bg-secondary" />
-        </div>
+
         <h1 className="sub-heading-2">Who are we?</h1>
         <p className="paragraph-2 pt-special-gap max-w-[500px] mx-auto text-center">
           Relishly is where culinary passion meets a sophisticated atmosphere.

@@ -13,7 +13,7 @@
   --spacing-special-gap: 28px;
   --spacing-special-gap-2: 40px;
 
-  --radius-base: 15px 15px 15px 0px;
+  --radius-base: 20px;
   --radius-menu-image: 15px 15px 15px 15px;
   --radius-gallery-image: 10px;
   --radius-cart: 30px 0px 30px 0px;
@@ -34,7 +34,7 @@
 }
 
 html {
-  scroll-padding-top: 90px;
+  scroll-padding-top: 65px;
   scroll-behavior: smooth;
 }
 
@@ -46,12 +46,12 @@ html {
   align-items: center;
   gap: 10px;
   overflow: hidden;
-  padding: 8px 12px;
+  padding: 8px 10px;
   color: var(--color-primary);
   border: 2px;
   border-color: var(--color-secondary);
   border-style: solid;
-  border-radius: 20px 20px 0px 20px;
+  border-radius: 3px;
   cursor: pointer;
 
   z-index: 1;
@@ -84,12 +84,12 @@ html {
   align-items: center;
   gap: 10px;
   overflow: hidden;
-  padding: 8px 12px;
+  padding: 8px 10px;
   color: var(--color-primary);
   border: 2px;
   border-color: var(--color-secondary);
   border-style: solid;
-  border-radius: 20px 20px 0px 20px;
+  border-radius: 3px;
   cursor: pointer;
   z-index: 1;
   font-size: clamp(0.9rem, 0.5vw + 0.7rem, 1rem);

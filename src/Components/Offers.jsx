@@ -12,17 +12,14 @@ export default function Offers() {
         />
 
         <h3 className="sub-heading-4">Breakfast</h3>
-        <button className="button-3">MENU</button>
+        <a href="#Menu" className="button-3">
+          MENU
+        </a>
       </div>
       <div className="w-full flex flex-col items-center justify-center order-first md:order-0">
-        <div className="flex flex-col items-center justify-center gap-y-10">
-          <div className="w-full h-fit flex flex-col items-center justify-center gap-y-8">
+        <div className="flex flex-col items-center justify-center gap-y-special-gap">
+          <div className="w-full h-fit flex flex-col items-center justify-center gap-y-12">
             <h2 className="sub-heading">Enjoy Meals</h2>
-            <div className="w-fit h-fit flex items-center justify-center gap-0">
-              <div className="w-6 h-0.5 bg-secondary" />
-              <div className="w-2 h-2 bg-secondary" />
-              <div className="w-6 h-0.5 bg-secondary" />
-            </div>
             <h1 className="sub-heading-2">We Offer Top Notch</h1>
             <p className="text-center paragraph-2">
               Savor the perfect blend of fresh ingredients and expert
@@ -37,7 +34,9 @@ export default function Offers() {
           />
         </div>
         <h3 className="sub-heading-4">Fast foods</h3>
-        <button className="button-3">MENU</button>
+        <a href="#Menu" className="button-3">
+          MENU
+        </a>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         <img
@@ -46,7 +45,9 @@ export default function Offers() {
           className="w-[300px] h-[375px] object-cover"
         />
         <h3 className="sub-heading-4">Drinks</h3>
-        <button className="button-3">MENU</button>
+        <a href="#Menu" className="button-3">
+          MENU
+        </a>
       </div>
     </div>
   );

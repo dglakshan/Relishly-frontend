@@ -30,15 +30,11 @@ export default function Menu() {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-special-gap">
         <div className="flex flex-col items-center justify-center gap-y-special-gap">
           <h2 className="sub-heading text-start">Our Menu</h2>
-          <div className="w-fit h-fit flex items-center justify-center gap-0">
-            <div className="w-6 h-0.5 bg-secondary" />
-            <div className="w-2 h-2 bg-secondary" />
-            <div className="w-6 h-0.5 bg-secondary" />
-          </div>
+
           <h1 className="sub-heading-2">We Provide Fresh Menu</h1>
         </div>
         <div className="w-full flex items-baseline-last justify-center h-full">
-          <div className=" top-0 flex flex-wrap gap-grid-gap overflow-hidden">
+          <div className="flex flex-wrap gap-grid-gap overflow-hidden">
             {mealsCategory.map((item) => (
               <button
                 onClick={() => {
@@ -54,7 +50,7 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="w-full col-span-7 h-fit grid grid-cols-1 md:grid-cols-2 gap-grid-gap pt-10">
+      <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 gap-grid-gap">
         {activeCategory === "ALL"
           ? menuData.map((item) => (
               <MenuItemCart
