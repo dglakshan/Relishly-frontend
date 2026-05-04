@@ -59,9 +59,7 @@ export default function BookTable() {
           ></textarea>
 
           <div className="flex justify-center mt-6">
-            <button type="submit" className="button-1">
-              Book a Table
-            </button>
+            <button className="button-1">Book a Table</button>
           </div>
         </form>
       </div>
