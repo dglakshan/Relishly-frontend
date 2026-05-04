@@ -1,6 +1,6 @@
 export default function MenuItemCart({ image, heading, price, description }) {
   return (
-    <div className="w-full h-auto flex items-center justify-start gap-x-4 rounded-special py-2 px-4.5 ">
+    <div className="w-full h-auto flex items-center justify-start gap-x-4 rounded-special py-2">
       <div className="w-[80px] h-[80px] shrink-0 rounded-menu-image overflow-hidden">
         <img
           src={image}
