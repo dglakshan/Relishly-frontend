@@ -9,7 +9,7 @@ export default function AboutUs() {
       <div className="w-full grid grid-cols-1 h-fit">
         <div className="relative h-[400px] md:h-[512px] w-full ">
           <img
-            src="/about-2.webp"
+            src="/about-5.webp"
             alt=""
             className="absolute top-0 left-0 object-cover w-full h-full "
           />

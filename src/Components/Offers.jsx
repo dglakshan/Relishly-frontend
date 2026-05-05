@@ -28,12 +28,12 @@ export default function Offers() {
             </p>
           </div>
           <img
-            src="/meal.webp"
+            src="/Offer-4.webp"
             alt=""
             className="w-[300px] h-[375px] object-cover shadow-2xs"
           />
         </div>
-        <h3 className="sub-heading-4">Fast foods</h3>
+        <h3 className="sub-heading-4">Appeetizers</h3>
         <a href="#Menu" className="button-3">
           MENU
         </a>
