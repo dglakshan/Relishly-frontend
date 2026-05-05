@@ -7,7 +7,7 @@ export default function Gallery() {
       <div className="h-fit  flex flex-col items-center justify-center gap-y-special-gap">
         <h2 className="sub-heading">Gallery</h2>
 
-        <h1 className="sub-heading-2">Happy Memories Always</h1>
+        <h1 className="sub-heading-2 text-center">Cherished Moments</h1>
       </div>
       <div className="w-full h-fit grid grid-cols-1 md:grid-cols-3 gap-grid-gap z-50 pt-20">
         <div className="flex flex-col gap-grid-gap ">
