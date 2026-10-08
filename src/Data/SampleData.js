@@ -1,6 +1,7 @@
 export const menuData = [
   // --- BREACKFAST ---
   {
+    id: 1,
     category: "BREACKFAST",
     image: "/Classic-Benedict.webp",
     heading: "Classic Benedict",
@@ -9,6 +10,7 @@ export const menuData = [
       "Poached eggs with smoked ham and hollandaise sauce on toasted muffins.",
   },
   {
+    id: 2,
     category: "BREACKFAST",
     image: "/Berry-Pancakes.webp",
     heading: "Berry Pancakes",
@@ -17,6 +19,7 @@ export const menuData = [
       "Fluffy buttermilk pancakes topped with fresh seasonal berries and maple syrup.",
   },
   {
+    id: 3,
     category: "BREACKFAST",
     image: "/Avocado-Toast.webp",
     heading: "Avocado Toast",
@@ -25,6 +28,7 @@ export const menuData = [
       "Smashed avocado on sourdough bread with cherry tomatoes and feta cheese.",
   },
   {
+    id: 4,
     category: "BREACKFAST",
     image: "/Spicy-Shakshuka.webp",
     heading: "Spicy Shakshuka",
@@ -33,6 +37,7 @@ export const menuData = [
       "Eggs poached in a simmering tomato sauce with bell peppers and spices.",
   },
   {
+    id: 5,
     category: "BREACKFAST",
     image: "/Brioche-French-Toast.webp",
     heading: "Brioche French Toast",
@@ -41,6 +46,7 @@ export const menuData = [
       "Thick brioche slices soaked in cinnamon custard and caramelized to perfection.",
   },
   {
+    id: 6,
     category: "BREACKFAST",
     image: "/Garden-Omelette.webp",
     heading: "Garden Omelette",
@@ -49,6 +55,7 @@ export const menuData = [
       "Three-egg omelette filled with spinach, mushrooms, and melted cheddar.",
   },
   {
+    id: 7,
     category: "BREACKFAST",
     image: "/Acai-Bowl.webp",
     heading: "Acai Bowl",
@@ -57,6 +64,7 @@ export const menuData = [
       "Pureed acai berries topped with granola, chia seeds, and sliced banana.",
   },
   {
+    id: 8,
     category: "BREACKFAST",
     image: "/Almond-Croissant.webp",
     heading: "Almond Croissant",
@@ -67,6 +75,7 @@ export const menuData = [
 
   // --- APPEETIZERS ---
   {
+    id: 9,
     category: "APPEETIZERS",
     image: "/Truffle-Fries.webp",
     heading: "Truffle Fries",
@@ -75,6 +84,7 @@ export const menuData = [
       "Crispy golden fries tossed in white truffle oil and parmesan.",
   },
   {
+    id: 10,
     category: "APPEETIZERS",
     image: "/Calamari-Fritti.webp",
     heading: "Calamari Fritti",
@@ -82,6 +92,7 @@ export const menuData = [
     description: "Lightly battered squid served with a zesty lemon aioli.",
   },
   {
+    id: 11,
     category: "APPEETIZERS",
     image: "/Bruschetta-Trio.webp",
     heading: "Bruschetta Trio",
@@ -92,6 +103,7 @@ export const menuData = [
 
   // --- MAINS ---
   {
+    id: 12,
     category: "MAINS",
     image: "/Grilled-Salmon.webp",
     heading: "Grilled Salmon",
@@ -102,6 +114,7 @@ export const menuData = [
 
   // --- SALADS ---
   {
+    id: 13,
     category: "SALADS",
     image: "/Caesar-Classic.webp",
     heading: "Caesar Classic",
@@ -110,6 +123,7 @@ export const menuData = [
       "Romaine lettuce, croutons, and parmesan with house-made dressing.",
   },
   {
+    id: 14,
     category: "SALADS",
     image: "/Greek-Harvest.webp",
     heading: "Greek Harvest",
@@ -120,6 +134,7 @@ export const menuData = [
 
   // --- DRINKS ---
   {
+    id: 15,
     category: "DRINKS",
     image: "/Iced-Latte.webp",
     heading: "Iced Latte",
@@ -128,6 +143,7 @@ export const menuData = [
       "Double shot of espresso over ice with creamy milk and vanilla.",
   },
   {
+    id: 16,
     category: "DRINKS",
     image: "/Tropical-Smoothie.webp",
     heading: "Tropical Smoothie",
@@ -135,6 +151,7 @@ export const menuData = [
     description: "A refreshing blend of mango, pineapple, and coconut water.",
   },
   {
+    id: 17,
     category: "DRINKS",
     image: "/Classic-Mojito.webp",
     heading: "Classic Mojito",

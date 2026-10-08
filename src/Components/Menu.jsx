@@ -54,6 +54,7 @@ export default function Menu() {
         {activeCategory === "ALL"
           ? menuData.map((item) => (
               <MenuItemCart
+                key={item.id}
                 image={item.image}
                 heading={item.heading}
                 price={item.price}
@@ -62,6 +63,7 @@ export default function Menu() {
             ))
           : filteredItems.map((item) => (
               <MenuItemCart
+                key={item.id}
                 image={item.image}
                 heading={item.heading}
                 price={item.price}

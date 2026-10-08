@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { bookingRequest } from "../../services/customerService";
+import {
+  bookingRequest,
+  fetchAvailableTables,
+  veryfyOtp,
+} from "../../services/customerService";
 
 export default function BookTable() {
   // Form State matching backend requirements
@@ -32,13 +36,10 @@ export default function BookTable() {
       setIsLoadingTables(true);
       try {
         // Option to call admin/get-all-tables or customer endpoint
-        const response = await bookingRequest({ credentials: formData });
+        const response = await fetchAvailableTables();
+
         if (response.data.success) {
-          // Filter only available tables
-          const unbooked = response.data.data.filter(
-            (table) => table.bookingStatus === "available",
-          );
-          setAvailableTables(unbooked);
+          setAvailableTables(response.data.tables);
         }
       } catch (error) {
         console.error("Failed to fetch available tables:", error);
@@ -93,7 +94,7 @@ export default function BookTable() {
         message: formData.message,
       };
 
-      const response = await axios.post(`${API_BASE_URL}/booking`, payload);
+      const response = await bookingRequest({ credentials: payload });
 
       if (response.data.success) {
         setFeedbackMsg({
@@ -119,9 +120,11 @@ export default function BookTable() {
     setFeedbackMsg({ type: "", text: "" });
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/confirm-booking`, {
-        email: formData.email,
-        enterdOtp: otp,
+      const response = await veryfyOtp({
+        credentials: {
+          email: formData.email,
+          enterdOtp: otp,
+        },
       });
 
       if (response.data.success) {
@@ -162,10 +165,8 @@ export default function BookTable() {
     >
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="mb-10 text-center">
-          <h3 className="sub-heading text-secondary font-semibold uppercase tracking-wider mb-2">
-            Reservation
-          </h3>
+        <div className="mb-10 text-center ">
+          <h3 className="sub-heading mb-4">Reservation</h3>
           <h2 className="sub-heading-2 text-3xl md:text-5xl font-bold">
             Book a Table
           </h2>
@@ -287,7 +288,7 @@ export default function BookTable() {
                       }`}
                     >
                       Table #{table.tableNumber} ({table.tableType} -{" "}
-                      {table.size} seats)
+                      {table.availableChairs} seats)
                     </button>
                   );
                 })}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { loginRequest } from "../../../services/adminService";
 
 export default function AdminLogin() {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -21,14 +22,15 @@ export default function AdminLogin() {
       const response = await loginRequest({ credentials: formData });
       if (response.data.success) {
         // Store JWT Auth Token and Admin Info
-        localStorage.setItem("authToken", response.data.authToken);
-        localStorage.setItem("role", "admin");
+        localStorage.setItem("relishlyAuthToken", response.data.authToken);
+        localStorage.setItem("relishlyAuthRole", "admin");
         localStorage.setItem("adminInfo", JSON.stringify(response.data.admin));
 
         // Navigate to Admin Dashboard
         navigate("/admin/dashboard");
       }
     } catch (error) {
+      console.log(error);
       setErrorMsg(
         error.response?.data?.message ||
           "Invalid credentials. Please try again.",
