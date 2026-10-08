@@ -1,9 +1,9 @@
 import axios from "axios";
-import dotenv from "dotenv";
 
-dotenv.config();
-
-const API_URL = process.env.VUE_APP_API_URL;
+// Access Vite environment variables directly via import.meta.env
+const API_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  "https://relishly-backend.onrender.com/api";
 
 export const api = axios.create({
   baseURL: API_URL,
